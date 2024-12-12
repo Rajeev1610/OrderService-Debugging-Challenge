@@ -22,6 +22,11 @@ The microservice, named **OrderService**, is responsible for managing orders and
 - The `/orders/{id}` endpoint is returning a 500 error due to a NullPointerException.
 - Missing exception handling for invalid or non-existent order IDs.
 - Incorrect database configuration leading to application startup failure.
+- InventoryService
+Bug Scenario
+Place an order for a product with insufficient stock.
+The InventoryService fails due to a stock constraint.
+The order is still created, but no stock is deducted.
 
 ### Acceptance Criteria
 1. The service starts without any errors.
