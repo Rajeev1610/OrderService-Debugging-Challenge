@@ -24,7 +24,7 @@ The microservice, named **OrderService**, is responsible for managing orders and
 - Incorrect database configuration leading to application startup failure.
 - InventoryService
   
-Bug Scenario
+Bug Scenario: 
 Place an order for a product with insufficient stock.
 The InventoryService fails due to a stock constraint.
 The order is still created, but no stock is deducted.
