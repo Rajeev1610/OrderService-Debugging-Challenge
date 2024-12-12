@@ -23,6 +23,7 @@ The microservice, named **OrderService**, is responsible for managing orders and
 - Missing exception handling for invalid or non-existent order IDs.
 - Incorrect database configuration leading to application startup failure.
 - InventoryService
+  
 Bug Scenario
 Place an order for a product with insufficient stock.
 The InventoryService fails due to a stock constraint.
