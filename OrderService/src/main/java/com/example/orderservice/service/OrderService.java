@@ -26,7 +26,7 @@ public class OrderService {
     public OrderService(OrderRepository orderRepository, ItemRepository itemRepository, RestTemplate restTemplate) {
         this.orderRepository = orderRepository;
         this.itemRepository = itemRepository;
-        this.restTemplate = restTemplate;
+        this.restTemplate = restTemplate ;
     }
 
 
