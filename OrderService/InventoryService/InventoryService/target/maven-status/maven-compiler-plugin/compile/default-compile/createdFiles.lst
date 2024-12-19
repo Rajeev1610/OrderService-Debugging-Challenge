@@ -1,0 +1,11 @@
+com\example\inventoryservice\model\InventoryUpdateRequest$InventoryItem.class
+com\example\inventoryservice\model\GraphRequest.class
+com\example\inventoryservice\repository\InventoryRepository.class
+com\example\inventoryservice\service\InventoryService.class
+com\example\inventoryservice\service\DijkstraAlgorithmService.class
+com\example\inventoryservice\InventoryServiceApplication.class
+com\example\inventoryservice\model\InventoryUpdateRequest.class
+com\example\inventoryservice\config\RestTemplateConfig.class
+com\example\inventoryservice\controller\InventoryController.class
+com\example\inventoryservice\controller\GraphController.class
+com\example\inventoryservice\model\Inventory.class

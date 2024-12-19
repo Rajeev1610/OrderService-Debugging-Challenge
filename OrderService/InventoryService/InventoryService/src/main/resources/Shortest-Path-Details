@@ -1,0 +1,30 @@
+http://localhost:8082/graph/shortest-path
+RequestBody:
+
+{
+ "nodes":[
+ "Test",
+ "Java",
+ "Sample",
+ "Sample3"
+],
+ "edges":[
+   [0,1],
+   [1,2],
+   [2,3]
+ ],
+ "start":"Test",
+ "end":"Sample3"
+}
+
+
+Response:
+{
+    "path": [
+        "Test",
+        "Java",
+        "Sample",
+        "Sample3"
+    ],
+    "distance": 6
+}
