@@ -2,6 +2,7 @@ package com.example.orderservice.controller;
 
 import com.example.orderservice.service.ExcelProcessorOriginalService;
 import com.example.orderservice.service.PrimeSumCalculatorService;
+import com.example.orderservice.service.TransactionProcessorOriginalService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,6 +22,9 @@ public class ExcelProcessorOriginalController {
 
     @Autowired
     PrimeSumCalculatorService primeSumCalculator;
+
+    @Autowired
+    TransactionProcessorOriginalService transactionProcessorOriginalService;
     @PostMapping("/word")
     public String readAndWrite() throws IOException {
         WordFrequencyOriginalService.readAndWrite();
@@ -34,6 +38,13 @@ public class ExcelProcessorOriginalController {
     @PostMapping("/")
     public String excelProcessData(){
         return ExcelProcessorOriginalService.excelProcessData();
+    }
+
+    @PostMapping("/csv")
+    public String csvProcess() throws IOException {
+        transactionProcessorOriginalService.transaction();
+        return "Success";
+
     }
 
 }
